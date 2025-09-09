@@ -6,14 +6,17 @@ Este repositorio contiene **9 problemas** progresivos para que un estudiante des
 
 1. Prepara el ambiente de desarrollo como se indicó en el Taller #0.
 
-2. Clona este repositorio:
+
+2. Ingresa a `https://github.com/UR-CC/lp1-taller1` y realiza un **fork** con tu cuenta.
+
+3. Clona tu **fork** del repositorio `lp1-taller1`:
 
     ```bash
-    git clone https://github.com/UR-CC/lp1-taller1.git
+    git clone https://github.com/TU-USUARIO/lp1-taller1.git
     cd lp1-taller1
     ```
 
-3. Para ejecutar cada problema utiliza:
+4. Para ejecutar cada problema utiliza:
 
     ```bash
     go run ./problema1
@@ -22,9 +25,9 @@ Este repositorio contiene **9 problemas** progresivos para que un estudiante des
     go run ./problema9
     ```
 
-4. Para cada problema, busca los comentarios `// TODO:` y sigue las indicaciones.
+5. Para cada problema, busca los comentarios `// TODO:` y sigue las indicaciones.
  
-5. Para detectar condiciones de carrera, puedes ejecutar el detector de carreras:
+6. Para detectar condiciones de carrera, puedes ejecutar el detector de carreras:
 
     ```bash
     go run -race ./problema3
