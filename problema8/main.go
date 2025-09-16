@@ -7,13 +7,13 @@ import (
 
 // Objetivo: Simular "futuros" en Go usando canales. Una función lanza trabajo asíncrono
 // y retorna un canal de solo lectura con el resultado futuro.
-// TODO: completa las funciones y experimenta con varios futuros a la vez.
 
 func asyncCuadrado(x int) <-chan int {
 	ch := make(chan int)
 	go func() {
 		defer close(ch)
-		// TODO: simular trabajo
+		// simular trabajo
+		time.Sleep(500 * time.Millisecond)
 
 		ch <- x * x
 	}()
